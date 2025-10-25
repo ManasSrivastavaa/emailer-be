@@ -1,0 +1,6 @@
+spring:
+ application:
+   name: Emailer
+ profiles:
+    active: dev,flyway,google,db 
+ 

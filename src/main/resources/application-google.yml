@@ -1,0 +1,4 @@
+google:
+ clientId: 590562849690-h0366qipa0ieffusitgrp8p35o89bu4f
+ clientSecret: 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
+ redirectUrl: http://localhost:4200/callback

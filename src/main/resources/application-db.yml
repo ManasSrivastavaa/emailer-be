@@ -1,0 +1,17 @@
+spring:
+  datasource:
+    url: jdbc:sqlserver://localhost;databaseName=emailer;encrypt=true;trustServerCertificate=true
+    username: sa
+    password: root
+    hikari:
+      pool-name: HikariPool
+      minimum-idle: 5
+      maximum-pool-size: 20
+      idle-timeout: 30000       
+      max-lifetime: 1800000    
+      connection-timeout: 30000 
+      auto-commit: true
+  jpa:
+    hibernate:
+      ddl-auto: update
+      naming.physical-strategy: com.manas.emailer.config.db.naming.DBNameingStrategy
